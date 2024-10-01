@@ -2,9 +2,9 @@
 
 Op hoog abstractieniveau zijn voor het begrijpen van deze standaard de volgende componenten te onderscheiden:
 
-- Applicatie
-- Logboek
-- Register
+- {{Applicatie}}
+- {{Logboek}}
+- {{Register}}
 
 Een Dataverwerking kan plaatsvinden over de grenzen van een verantwoordelijkheid. In dat geval roept een Applicatie van Verantwoordelijke A de Applicatie van Verantwoordelijke B aan. Denk bijvoorbeeld aan het bevragen of muteren van gegevens via een API.
 
