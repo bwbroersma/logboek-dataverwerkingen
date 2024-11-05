@@ -178,20 +178,20 @@
 | **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
 
 | **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |operationName                                                                                  |
-| **Definitie Engels**        |specific operation addressed, or referred to.                                                                                  |
-| **Attribuutnaam Nederlands**|actieNaam                                                                                  |
-| **Definitie Nederlands**    |naam van een specifieke gegevensverwerkingsactie.                                                                                  |
-| **Toelichting**             |Aanbevolen wordt alle gegevensverwerkingsacties te beschrijven als een werkwoord (werkwoordsvorm infinitief) gevolgd door een zelfstandig naamwoord.                                                                                  |
-| **Noodzakelijkheid**        |Om duidelijk te maken aan de betrokkene (in het geval van een aanvraag gegevensinkijk) wat er concreet is gebeurd bij een gegevensverwerkingsactie, wordt er een operationName gedefinieerd. Zie ook artikel 4 van de AVG waarin de definitie van ‘verwerking’ wordt genoemd:
-een bewerking of een geheel van bewerkingen met betrekking tot persoonsgegevens of een geheel van persoonsgegevens, al dan niet uitgevoerd via geautomatiseerde procedés, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens.
-                                                                                  |
-| **Datatype**                |CharacterString                                                                                  |
-| **Voorbeeld**               |Opslaan persoonsgegevens                                                                                  |
-| **Verplicht**               |Ja                                                                                  |
-| **Gebruikt in**             |Logboek                                                                                  |
-| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
+|-----------------------------|----------------------------------------------------------------------------------|
+| **Attribuutnaam**           | operationName                                                                    |
+| **Definitie Engels**        | Specific operation addressed or referred to.                                     |
+| **Attribuutnaam Nederlands**| actieNaam                                                                        |
+| **Definitie Nederlands**    | Naam van een specifieke gegevensverwerkingsactie.                                |
+| **Toelichting**             | Aanbevolen wordt om alle gegevensverwerkingsacties te beschrijven als een werkwoord (in de infinitief) gevolgd door een zelfstandig naamwoord. |
+| **Noodzakelijkheid**        | Om duidelijk te maken aan de betrokkene (bij een verzoek om gegevensinzage) wat er concreet is gebeurd bij een gegevensverwerkingsactie, wordt een operationName gedefinieerd. Zie ook artikel 4 van de AVG, waarin de definitie van ‘verwerking’ wordt genoemd: |
+|een bewerking of een geheel van bewerkingen met betrekking tot persoonsgegevens, al dan niet uitgevoerd via geautomatiseerde procedés, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens. |
+| **Datatype**                | CharacterString                                                                  |
+| **Voorbeeld**               | Opslaan persoonsgegevens                                                         |
+| **Verplicht**               | Ja                                                                               |
+| **Gebruikt in**             | Logboek                                                                          |
+| **Enumeratiewaarden**       | Niet van toepassing                                                              |
+
 
 | **Attribuut**               | **Beschrijving**                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------|
