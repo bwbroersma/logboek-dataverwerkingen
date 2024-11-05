@@ -27,3 +27,297 @@
 | **Verplicht**               | Ja                                                                              |
 | **Gebruikt in**             | Logboek                                                                          |
 | **Enumeratiewaarden**       | Niet van toepassing                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |dataSubjectCategories                                                                                  |
+| **Definitie Engels**        |A classification of data subjects relevant to an organization. Can be used to categorize business-specific and regulation-specific categories. Examples: Employees Customers Suppliers                                                                        |
+| **Attribuutnaam Nederlands**| categorieënBetrokkenen                                                                                 |
+| **Definitie Nederlands**    | Een beschrijving van de categorieën van personen van wie gegevens verwerkt worden.                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        | In AVG artikel 30-1c wordt de volgende maatregel benoemd: Elke verwerkingsverantwoordelijke en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke houdt een register van de verwerkingsactiviteiten die onder hun verantwoordelijkheid plaatsvinden. Dat register bevat alle volgende gegevens: een beschrijving van de categorieën van betrokkenen en van de categorieën van persoonsgegevens.                                                                                 |
+| **Datatype**                |Enumwaarde                                                                                  |
+| **Voorbeeld**               |   Burger                                                                                |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Register                                                                                  |
+| **Enumeratiewaarden**       |Afhankelijk van het type systeem en betrokken actoren. Er kunnen meerdere categorieën van toepassing zijn.                                                                                   |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |dplCoreProcessingActivityId                                                                                  |
+| **Definitie Engels**        |Reference to Register with more information about the processing activity.                                                                                  |
+| **Attribuutnaam Nederlands**|dplCoreVerwerkingsactiviteitId                                                                                  |
+| **Definitie Nederlands**    |Verwijzing naar Register met meer informatie over de verwerkingsactiviteit.                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |Elke gegevensverwerking in het logboek moet in lijn zijn met de vooraf gedefinieerde verwerkingsactiviteiten in het register (zie AVG artikel 30). Om te voorkomen dat alle attribuutsoorten van het register gedupliceerd worden in het logboek, wordt in het logboek alleen verwezen naar het VerwerkingsactiviteitId van het register.                                                                                  |
+| **Datatype**                |URI                                                                                 |
+| **Voorbeeld**               |6e8bc430-9c3a-11d9-9669-0800200c9a66                                                                                  |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Register en Logboek                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |endTime                                                                                  |
+| **Definitie Engels**        |Timestamp representing the end of a data processing logging action.                                                                                  |
+| **Attribuutnaam Nederlands**|eindTijd                                                                                  |
+| **Definitie Nederlands**    |Tijdstempel die het einde van een logboekactie voor gegevensverwerking vertegenwoordigt.                                                                                  |
+| **Toelichting**             |Een logboekregel wordt pas weggeschreven in het logboek als de volledige transactie (succesvol of niet succesvol) is afgerond.                                                                                  |
+| **Noodzakelijkheid**        | Bij een inzageverzoek van de Betrokkene ten aanzien van gegevensverwerkingsacties, wordt ook een tijdsspanne gevraagd. Alleen de details van een gegevenswerkingsactie binnen opgegeven tijdsspanne worden gerapporteerd. Zonder begin- en eindtijd van een gegevensverwerkingsactie is het onmogelijk de juiste details op te leveren.                                                                                 |
+| **Datatype**                | DateTime                                                                                 |
+| **Voorbeeld**               | 2025-02-23T00:00:00                                                                                 |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Logboek                                                                                  |
+| **Enumeratiewaarden**       | Niet van toepassing.                                                                                 |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |envisagedTimeLimit                                                                                  |
+| **Definitie Engels**        |the maximum period for which the personal data is necessary to achieve the purpose of the processing or no longer than the period anchored in sector-specific legislation.                                                                                  |
+| **Attribuutnaam Nederlands**|bewaarTermijn                                                                                  |
+| **Definitie Nederlands**    |de maximale periode waarin de persoonsgegevens noodzakelijk worden bewaard om het doel van de verwerking te bereiken of niet langer dan de termijn die verankerd is in sectorspecifieke wetgeving.                                                                                  |
+| **Toelichting**             |Als het bewaartermijn van een bewaard gegeven verstreken is, dan moet het gegeven worden verwijderd uit het logboek.                                                                                  |
+| **Noodzakelijkheid**        |In AVG artikel 30-1f wordt de volgende maatregel benoemd: Elke verwerkingsverantwoordelijke en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke houdt een register van de verwerkingsactiviteiten die onder hun verantwoordelijkheid plaatsvinden. Dat register bevat alle volgende gegevens: indien mogelijk, de beoogde termijnen waarbinnen de verschillende categorieën van gegevens moeten worden gewist. De concrete datum waarop een gegevensverwerking moet worden gewist uit het logboek, kan bepaald worden door middel van het bewaartermijn in het register en de eindtijd waarop een gegevensverwerking is gelogd in het logboek. Daardoor is het onnodig om de concrete verwijderdatum van een gegevensverwerking te registreren in het logboek.                                                                                  |
+| **Datatype**                |DateTime                                                                                  |
+| **Voorbeeld**               |2025-02-23T00:00:00                                                                                  |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Register                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |foreignOperation.entity                                                                                  |
+| **Definitie Engels**        |Reference to external entity.                                                                                  |
+| **Attribuutnaam Nederlands**|entiteit                                                                                  |
+| **Definitie Nederlands**    |Verwijzing naar externe entiteit.                                                                                  |
+| **Toelichting**             |Indien er voor een verwerking ook een logging heeft plaatsgevonden door een externe informatiebron, dan wordt er een verwijzing aangemaakt om de gegevens van deze logging in te kunnen zien.                                                                                  |
+| **Noodzakelijkheid**        |Indien het noodzakelijk is ook gegevensverwerkingsacties van een externe gegevensbron te gebruiken, dan wordt een unieke referentie naar deze externe gegevensverwerkingsactie geregistreerd in het logboek. Door alleen te verwijzen naar de externe gegevensverwerkingsactie, kan voorkomen worden dat gegevens gedupliceerd worden opgeslagen in het logboek.                                                                                  |
+| **Datatype**                |URI                                                                                  |
+| **Voorbeeld**               |foo://techtarget.com:8042/over/there?name=parrot#beak                                                                                  |
+| **Verplicht**               |Nee                                                                                  |
+| **Gebruikt in**             |Logboek                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |foreignOperation.operationId                                                                                  |
+| **Definitie Engels**        |Unique name given to a foreign processing operation.                                                                                   |
+| **Attribuutnaam Nederlands**|externeActie.actieId                                                                                  |
+| **Definitie Nederlands**    |Identificator die de externe verwerkingsactie uniek identificeert.                                                                                  |
+| **Toelichting**             |Externe verwerkingsacties kunnen een onderdeel zijn van de totale verwerkingsactie. OperationId is in dit geval een attribuutsoort van het objecttype foreignOperation.                                                                                  |
+| **Noodzakelijkheid**        |Indien het noodzakelijk is ook gegevensverwerkingsacties van een externe gegevensbron te gebruiken, dan wordt een unieke referentie naar deze externe gegevensverwerkingsactie geregistreerd in het logboek. Het foreignOperation.operationId refereert naar één specifieke gegevensverwerkingsactie door de externe gegevensbron.  Door alleen te verwijzen naar de externe gegevensverwerkingsactie, kan voorkomen worden dat gegevens gedupliceerd worden opgeslagen in het logboek.                                                                                  |
+| **Datatype**                |URI                                                                                  |
+| **Voorbeeld**               |6e8bc430-9c3a-11d9-9669-0800200c9a66                                                                                  |
+| **Verplicht**               |Nee                                                                                  |
+| **Gebruikt in**             |Logboek                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |                                                                                  |
+| **Definitie Engels**        |                                                                                  |
+| **Attribuutnaam Nederlands**|                                                                                  |
+| **Definitie Nederlands**    |                                                                                  |
+| **Toelichting**             |                                                                                  |
+| **Noodzakelijkheid**        |                                                                                  |
+| **Datatype**                |                                                                                  |
+| **Voorbeeld**               |                                                                                  |
+| **Verplicht**               |                                                                                  |
+| **Gebruikt in**             |                                                                                  |
+| **Enumeratiewaarden**       |                                                                                  |
