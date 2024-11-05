@@ -185,7 +185,7 @@
 | **Definitie Nederlands**    | Naam van een specifieke gegevensverwerkingsactie.                                |
 | **Toelichting**             | Aanbevolen wordt om alle gegevensverwerkingsacties te beschrijven als een werkwoord (in de infinitief) gevolgd door een zelfstandig naamwoord. |
 | **Noodzakelijkheid**        | Om duidelijk te maken aan de betrokkene (bij een verzoek om gegevensinzage) wat er concreet is gebeurd bij een gegevensverwerkingsactie, wordt een operationName gedefinieerd. Zie ook artikel 4 van de AVG, waarin de definitie van ‘verwerking’ wordt genoemd: |
-||een bewerking of een geheel van bewerkingen met betrekking tot persoonsgegevens, al dan niet uitgevoerd via geautomatiseerde procedés, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens. |
+||*een bewerking of een geheel van bewerkingen met betrekking tot persoonsgegevens, al dan niet uitgevoerd via geautomatiseerde procedés, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens.*|
 | **Datatype**                | CharacterString                                                                  |
 | **Voorbeeld**               | Opslaan persoonsgegevens                                                         |
 | **Verplicht**               | Ja                                                                               |
@@ -195,154 +195,155 @@
 
 | **Attribuut**               | **Beschrijving**                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
+| **Attribuutnaam**           | parentDplCoreProcessingActivityId                                                                                 |
+| **Definitie Engels**        | a parent is one class, and a child is another class that inherits all of the attributes and functions assigned to the parent class. The parentId refers to the parent class.                                                                                 |
+| **Attribuutnaam Nederlands**| parentDplCoreVerwerkingsactiviteitId                                                                                 |
+| **Definitie Nederlands**    | een parent is één klasse, en een child is een andere klasse die alle attributen en functies overerft die aan de bovenliggende klasse zijn toegewezen. De parentId verwijst naar de bovenliggende klasse.                                                                                 |
+| **Toelichting**             | Een verwerkingsactiviteit kan onderdeel zijn een andere verwerkingsactiviteit. Op deze manier ontstaat er een hiërarchie van verwerkingsactiviteiten.                                                                                 |
+| **Noodzakelijkheid**        | Een bepaalde verwerkingsactiviteit kan een onderdeel zijn van een andere verwerkingsactiviteit. Door gebruik te maken van een ‘parent/child’-structuur, hoeven er geen nieuwe attributen gedefinieerd te worden om een hiërarchie van verwerkingsactiviteiten te creëren.                                                                                 |
+| **Datatype**                |URI                                                                                  |
+| **Voorbeeld**               |6e8bc430-9c3a-11d9-9669-0800200c9a66                                                                                  |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Register en Logboek                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |parentOperationId                                                                                  |
+| **Definitie Engels**        |a parent is one class, and a child is another class that inherits all of the attributes and functions assigned to the parent class. The parentId refers to the parent class.                                                                                  |
+| **Attribuutnaam Nederlands**|parentActieId                                                                                  |
+| **Definitie Nederlands**    |een parent is één klasse, en een child is een andere klasse die alle attributen en functies overerft die aan de bovenliggende klasse zijn toegewezen. De parentId verwijst naar de bovenliggende klasse.                                                                                  |
+| **Toelichting**             |Een gegevensverwerkingsactie kan onderdeel zijn een andere verwerkingsactie. Op deze manier ontstaat er een hiërarchie van gegevensverwerkingsacties.                                                                                  |
+| **Noodzakelijkheid**        |Een bepaalde verwerkingsactie kan een onderdeel zijn van een andere verwerkingsactie. Door gebruik te maken van een ‘parent/child’-structuur, hoeven er geen nieuwe attributen gedefinieerd te worden om een hiërarchie van gegevensverwerkingsacties te creëren.                                                                                  |
+| **Datatype**                |URI                                                                                  |
+| **Voorbeeld**               |6e8bc430-9c3a-11d9-9669-0800200c9a66                                                                                  |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Logboek                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|----------------------------------------------------------------------------------|
+| **Attribuutnaam**           | personalDataCategories                                                           |
+| **Definitie Engels**        | Category of information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier, or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person. |
+| **Attribuutnaam Nederlands**| categorieënPersoonsgegevens                                                      |
+| **Definitie Nederlands**    | Categorieën van Persoonsgegevens zijn alle gegevens die betrekking hebben op een geïdentificeerde of identificeerbare levende natuurlijke persoon. Losse gegevens die samengevoegd kunnen leiden tot de identificatie van een bepaalde persoon vormen ook persoonsgegevens. |
+| **Toelichting**             | Verwerking van persoonsgegevens waaruit ras of etnische afkomst, politieke opvattingen, religieuze of levensbeschouwelijke overtuigingen, of het lidmaatschap van een vakbond blijken, en verwerking van genetische gegevens, biometrische gegevens met het oog op de unieke identificatie van een persoon, of gegevens over gezondheid, of gegevens met betrekking tot iemands seksueel gedrag of seksuele gerichtheid zijn verboden. |
+| **Noodzakelijkheid**        | In AVG artikel 30-1c wordt de volgende maatregel benoemd: Elke verwerkingsverantwoordelijke en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke houdt een register van de verwerkingsactiviteiten die onder hun verantwoordelijkheid plaatsvinden. Dat register bevat alle volgende gegevens: een beschrijving van de categorieën van betrokkenen en van de categorieën van persoonsgegevens. |
+| **Datatype**                | Enumwaarde                                                                        |
+| **Voorbeeld**               | Nummer van identiteitskaart                                                       |
+| **Verplicht**               | Ja                                                                               |
+| **Gebruikt in**             | Register                                                                         |
+| **Enumeratiewaarden**       | Afhankelijk van het type systeem en betrokken actoren. Er kunnen meerdere categorieën van toepassing zijn. |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           | purpose                                                                                 |
+| **Definitie Engels**        | Personal data may only be processed for specified, explicit and legitimate purposes and may not be further processed in a manner incompatible with those purposes.                                                                                  |
+| **Attribuutnaam Nederlands**| doelEinde                                                                                 |
+| **Definitie Nederlands**    | Persoonsgegevens mogen slechts worden verwerkt voor welbepaalde, uitdrukkelijk omschreven en gerechtvaardigde doeleinden en mogen vervolgens niet verder op een met die doeleinden onverenigbare wijze worden verwerkt.                                                                                 |
+| **Toelichting**             | Persoonsgegevens mogen alleen verwerken als je vóóraf de specifieke doeleinden voor de verwerking bepaald zijn.                                                                                  |
+| **Noodzakelijkheid**        | In AVG artikel 5-1b wordt de volgende maatregel benoemd: *Persoonsgegevens moeten: voor welbepaalde, uitdrukkelijk omschreven en gerechtvaardigde doeleinden worden verzameld en mogen vervolgens niet verder op een met die doeleinden onverenigbare wijze worden verwerkt; de verdere verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden wordt overeenkomstig artikel 89, lid 1, niet als onverenigbaar met de oorspronkelijke doeleinden beschouwd („doelbinding”).*                                                                                |
+| **Datatype**                | CharacterString                                                                                 |
+| **Voorbeeld**               | Het aanvragen, afgeven en innemen van reisdocumenten en het verwerken van kennisgevingen van het in het buitenland afgegeven reisdocumenten.                                                                                 |
+| **Verplicht**               | Ja                                                                                 |
+| **Gebruikt in**             |  Register                                                                                 |
+| **Enumeratiewaarden**       | Niet van toepassing                                                                                 |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           | recipientsCategories                                                                                 |
+| **Definitie Engels**        | Categories of natural or legal person, public authority, agency or another body, to which the personal data are disclosed, whether a third party or not.                                                                                  |
+| **Attribuutnaam Nederlands**| categorieënOntvangers                                                                                 |
+| **Definitie Nederlands**    | Categorieën van natuurlijke of rechtspersonen, overheidsinstanties, agentschap of andere instanties waaraan de persoonsgegevens worden bekendgemaakt, al dan niet een derde partij.                                                                                 |
 | **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
+| **Noodzakelijkheid**        | In AVG artikel 30-1d wordt de volgende maatregel benoemd: *Elke verwerkingsverantwoordelijke en, in voorkomend geval, de vertegenwoordiger van de verwerkingsverantwoordelijke houdt een register van de verwerkingsactiviteiten die onder hun verantwoordelijkheid plaatsvinden. Dat register bevat alle volgende gegevens: de categorieën van ontvangers aan wie de persoonsgegevens zijn of zullen worden verstrekt, onder meer ontvangers in derde landen of internationale organisaties.*                                                                                 |
+| **Datatype**                |Enumwaarde                                                                                 |
+| **Voorbeeld**               |Aanvragers, rechthebbenden                                                                                  |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Register                                                                                  |
+| **Enumeratiewaarden**       |Afhankelijk van het type systeem en betrokken actoren. Er kunnen meerdere categorieën van toepassing zijn.                                                                                   |
+
+| **Attribuut**               | **Beschrijving**                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------|
+| **Attribuutnaam**           |resource.attribute                                                                                  |
+| **Definitie Engels**        |Attributes in the form of key value pairs.                                                                                  |
+| **Attribuutnaam Nederlands**|informatiebron.attribuut                                                                                  |
+| **Definitie Nederlands**    |Attribuutsoorten in de vorm van key value pairs.                                                                                  |
+| **Toelichting**             |Organisaties hebben de vrijheid om zelf key value pairs te bepalen als dit bijdraagt aan de inzichtelijkheid voor de logging van een gegevensverwerkingsactie. Naast naam en versie van de informatiebron, kan de organisatie andere attribuutsoorten definiëren ten aanzien van de informatiebron.                                                                                  |
+| **Noodzakelijkheid**        |In AVG grond 61 wordt de volgende maatregel benoemd: *De informatie over de verwerking van persoonsgegevens betreffende de betrokkene dient hem te worden meegedeeld bij het verzamelen bij de betrokkene van de gegevens of, indien de gegevens uit een andere bron zijn verkregen, binnen een redelijke termijn, die afhangt van de omstandigheden van het geval. Wanneer de persoonsgegevens rechtmatig aan een andere ontvanger kunnen worden verstrekt, dient de betrokkene te worden meegedeeld wanneer de persoonsgegevens voor het eerst aan de ontvanger worden verstrekt. Wanneer de verwerkingsverantwoordelijke voornemens is de persoonsgegevens te verwerken met een ander doel dan dat waarvoor zij zijn verzameld, moet de verwerkingsverantwoordelijke de betrokkene vóór die verdere verwerking informatie over dat andere doel en andere noodzakelijke informatie verstrekken. Wanneer de oorsprong van de persoonsgegevens niet aan de betrokkene kan worden meegedeeld omdat verschillende bronnen zijn gebruikt, moet algemene informatie worden verstrekt.* De organisatie kan meerdere attribuutsoorten definiëren indien dit preciezere informatie oplevert ten aanzien van de gegevensbron.                                                                                  |
 | **Datatype**                |                                                                                  |
 | **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
+| **Verplicht**               |Nee                                                                                  |
+| **Gebruikt in**             |Logboek                                                                                  |
 | **Enumeratiewaarden**       |                                                                                  |
 
 | **Attribuut**               | **Beschrijving**                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
+| **Attribuutnaam**           |resource.name                                                                                  |
+| **Definitie Engels**        |name of any tangible or intangible asset capable of generating, transmitting, receiving, processing, or representing data in electronic form, where the asset is owned, licensed, operated, managed, or made available by, or otherwise used by, a data processing organisation.                                                                                  |
+| **Attribuutnaam Nederlands**|informatiebron.naam                                                                                  |
+| **Definitie Nederlands**    |naam van een materieel of immaterieel bezit dat gegevens in elektronische vorm kan genereren, verzenden, ontvangen, verwerken of vertegenwoordigen, waarbij het actief eigendom is van, in licentie is gegeven, wordt geëxploiteerd, beheerd of beschikbaar wordt gesteld door, of anderszins wordt gebruikt door, een gegevensverwerkingsorganisatie.                                                                                  |
+| **Toelichting**             |Naam (name) is een attribuutsoort van het objecttype Informatiebron (Resource).                                                                                  |
+| **Noodzakelijkheid**        |In AVG grond 61 wordt de volgende maatregel benoemd: *De informatie over de verwerking van persoonsgegevens betreffende de betrokkene dient hem te worden meegedeeld bij het verzamelen bij de betrokkene van de gegevens of, indien de gegevens uit een andere bron zijn verkregen, binnen een redelijke termijn, die afhangt van de omstandigheden van het geval. Wanneer de persoonsgegevens rechtmatig aan een andere ontvanger kunnen worden verstrekt, dient de betrokkene te worden meegedeeld wanneer de persoonsgegevens voor het eerst aan de ontvanger worden verstrekt. Wanneer de verwerkingsverantwoordelijke voornemens is de persoonsgegevens te verwerken met een ander doel dan dat waarvoor zij zijn verzameld, moet de verwerkingsverantwoordelijke de betrokkene vóór die verdere verwerking informatie over dat andere doel en andere noodzakelijke informatie verstrekken. Wanneer de oorsprong van de persoonsgegevens niet aan de betrokkene kan worden meegedeeld omdat verschillende bronnen zijn gebruikt, moet algemene informatie worden verstrekt.*                                                                                  |
+| **Datatype**                |CharacterString                                                                                  |
+| **Voorbeeld**               |Vergunningenadministratie                                                                                  |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Logboek                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
 
 | **Attribuut**               | **Beschrijving**                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
+| **Attribuutnaam**           | resource.version                                                                                 |
+| **Definitie Engels**        | version of any tangible or intangible asset capable of generating, transmitting, receiving, processing, or representing data in electronic form, where the asset is owned, licensed, operated, managed, or made available by, or otherwise used by, a data processing organisation.                                                                                 |
+| **Attribuutnaam Nederlands**| informatiebron.versie                                                                                  |
+| **Definitie Nederlands**    | naam van een materieel of immaterieel bezit dat gegevens in elektronische vorm kan genereren, verzenden, ontvangen, verwerken of vertegenwoordigen, waarbij het actief eigendom is van, in licentie is gegeven, wordt geëxploiteerd, beheerd of beschikbaar wordt gesteld door, of anderszins wordt gebruikt door, een gegevensverwerkingsorganisatie.                                                                                 |
+| **Toelichting**             | Versie (version) is een attribuutsoort van het objecttype Informatiebron (Resource).                                                                                 |
+| **Noodzakelijkheid**        | In AVG grond 61 wordt de volgende maatregel benoemd: De informatie over de verwerking van persoonsgegevens betreffende de betrokkene dient hem te worden meegedeeld bij het verzamelen bij de betrokkene van de gegevens of, indien de gegevens uit een andere bron zijn verkregen, binnen een redelijke termijn, die afhangt van de omstandigheden van het geval. Wanneer de persoonsgegevens rechtmatig aan een andere ontvanger kunnen worden verstrekt, dient de betrokkene te worden meegedeeld wanneer de persoonsgegevens voor het eerst aan de ontvanger worden verstrekt. Wanneer de verwerkingsverantwoordelijke voornemens is de persoonsgegevens te verwerken met een ander doel dan dat waarvoor zij zijn verzameld, moet de verwerkingsverantwoordelijke de betrokkene vóór die verdere verwerking informatie over dat andere doel en andere noodzakelijke informatie verstrekken. Wanneer de oorsprong van de persoonsgegevens niet aan de betrokkene kan worden meegedeeld omdat verschillende bronnen zijn gebruikt, moet algemene informatie worden verstrekt. Van sommige informatiebronnen zijn meerdere versies aanwezig. In dit geval is de vermelding van de versie van deze informatiebron een preciezere definitie.                                                                                 |
+| **Datatype**                |   CharacterString                                                                                |
+| **Voorbeeld**               |  1.0.1.e                                                                                |
+| **Verplicht**               | Ja                                                                                 |
+| **Gebruikt in**             | Logboek                                                                                 |
+| **Enumeratiewaarden**       | Niet van toepassing                                                                                 |
 
 | **Attribuut**               | **Beschrijving**                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
+| **Attribuutnaam**           | startTime                                                                                 |
+| **Definitie Engels**        | Timestamp representing the start of a data processing logging action.                                                                                 |
+| **Attribuutnaam Nederlands**| startTijd                                                                                 |
+| **Definitie Nederlands**    | Tijdstempel die het begin van een logboekactie voor gegevensverwerking vertegenwoordigt.                                                                                 |
+| **Toelichting**             | Een logboekregel wordt pas weggeschreven in het logboek als de volledige transactie (succesvol of niet succesvol) is afgerond.                                                                                 |
+| **Noodzakelijkheid**        | Bij een inzageverzoek van de Betrokkene ten aanzien van gegevensverwerkingsactie, wordt ook een tijdsspanne gevraagd. Alleen de details van gegevenswerkingactie binnen opgegeven tijdsspanne worden gerapporteerd. Zonder begin- en eindtijd van een gegevensverwerkingactie is het onmogelijk de juiste details op te leveren.                                                                                 |
+| **Datatype**                | DateTime                                                                                 |
+| **Voorbeeld**               | 2025-02-23T00:00:00                                                                                 |
+| **Verplicht**               | Ja                                                                                 |
+| **Gebruikt in**             | Logboek                                                                                 |
+| **Enumeratiewaarden**       | Niet van toepassing                                                                                 |
 
 | **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
+|-----------------------------|----------------------------------------------------------------------------------|
+| **Attribuutnaam**           | statusCode                                                                       |
+| **Definitie Engels**        | Indicates whether a request has been processed successfully or not by the server. |
+| **Attribuutnaam Nederlands**| statusCode                                                                       |
+| **Definitie Nederlands**    | Geeft aan of een verzoek al dan niet met succes door de server is verwerkt.     |
+| **Toelichting**             | Als een geautomatiseerd verzoek correct wordt afgehandeld, dan zal de status 'OK' zijn. Bij een foutmelding (ongeacht het type foutmelding) zal de statusCode 'NOK' zijn. |
+| **Noodzakelijkheid**        | Indien een gegevensverwerkingactie heeft plaatsgevonden, is het van belang te weten of deze verwerkingsactie gelukt is of niet. Zonder de statuscode kan er niet worden gerapporteerd aan een betrokkene of een wijziging daadwerkelijk heeft plaatsgevonden. |
+| **Datatype**                | Enumwaarde                                                                       |
+| **Voorbeeld**               | OK                                                                               |
+| **Verplicht**               | Ja                                                                               |
+| **Gebruikt in**             | Logboek                                                                          |
+| **Enumeratiewaarden**       | - 0: Unknown<br>- 1: OK<br>- 2: NOK                                             |
 
 | **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
+|-----------------------------|----------------------------------------------------------------------------------|
+| **Attribuutnaam**           | traceId                                                                          |
+| **Definitie Engels**        | Unique identifier of the request in the system, which adds the possibility of tracing the history of the request in detail. |
+| **Attribuutnaam Nederlands**| traceerId                                                                        |
+| **Definitie Nederlands**    | Unieke identificatie van een bericht in het systeem, waarmee de mogelijkheid ontstaat om de geschiedenis van het bericht in detail te volgen. |
+| **Toelichting**             | Een trace is het proces waarbij informatie wordt vastgelegd over de stroom van transacties of verzoeken van een applicatie of systeem. Logboekregistratie is doorgaans breder van opzet en legt een breder scala aan gebeurtenissen vast, terwijl tracering meer specifieke informatie biedt over het uitvoeringspad van individuele verzoeken. |
+| **Noodzakelijkheid**        | De traceId is de unieke factor die alle (sub)gegevenswerkingsacties die betrekking hebben op een (hoofd)gegevensverwerkingactie aan elkaar verbindt. Zonder de traceId kan een totaal aan elkaar gelieerde gegevensverwerkingsacties niet worden gerapporteerd. |
+| **Datatype**                | URI                                                                              |
+| **Voorbeeld**               | 6e8bc430-9c3a-11d9-9669-0800200c9a66                                          |
+| **Verplicht**               | Ja                                                                               |
+| **Gebruikt in**             | Logboek                                                                          |
+| **Enumeratiewaarden**       | Niet van toepassing                                                              |
 
-| **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
-
-| **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
-
-| **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
-
-| **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
-
-| **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
