@@ -146,46 +146,52 @@
 
 
 | **Attribuut**               | **Beschrijving**                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
+|-----------------------------|----------------------------------------------------------------------------------|
+| **Attribuutnaam**           | LegalBasisComment                                                                |
+| **Definitie Engels**        | More detailed explanation of the general conditions governing the lawfulness of processing by the controller. |
+| **Attribuutnaam Nederlands**| grondslagUitleg                                                                  |
+| **Definitie Nederlands**    | Uitleg bij de algemene voorwaarden inzake de rechtmatigheid van verwerking door de verwerkingsverantwoordelijke. |
 | **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
+| **Noodzakelijkheid**        | Organisaties mogen persoonsgegevens alleen verzamelen met een gerechtvaardigd doel. Dat doel moet specifiek zijn en vooraf uitdrukkelijk zijn omschreven. Artikel 5-1 van de AVG benoemt (onder andere) de volgende maatregelen: |
+|                             | a) Persoonsgegevens moeten worden verwerkt op een wijze die ten aanzien van de betrokkene rechtmatig, behoorlijk en transparant is ("rechtmatigheid, behoorlijkheid en transparantie"); |
+|                             | b) voor welbepaalde, uitdrukkelijk omschreven en gerechtvaardigde doeleinden worden verzameld en mogen vervolgens niet verder op een met die doeleinden onverenigbare wijze worden verwerkt; de verdere verwerking met het oog op archivering in het algemeen belang, wetenschappelijk of historisch onderzoek of statistische doeleinden wordt overeenkomstig artikel 89, lid 1, niet als onverenigbaar met de oorspronkelijke doeleinden beschouwd ("doelbinding"); |
+|                             | c) toereikend zijn, ter zake dienend en beperkt tot wat noodzakelijk is voor de doeleinden waarvoor zij worden verwerkt ("minimale gegevensverwerking"). |
+| **Datatype**                | CharacterString                                                                  |
+| **Voorbeeld**               | Paspoortenregeling Nederland                                                     |
+| **Verplicht**               | Nee                                                                              |
+| **Gebruikt in**             | Register                                                                         |
+| **Enumeratiewaarden**       | Niet van toepassing                                                              |
+
 
 | **Attribuut**               | **Beschrijving**                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
+| **Attribuutnaam**           |operationId                                                                                  |
+| **Definitie Engels**        |Unique name given to a processing operation.                                                                                   |
+| **Attribuutnaam Nederlands**|actieId                                                                                  |
+| **Definitie Nederlands**    |Identificator die de gegevensverwerkingsactie uniek identificeert.                                                                                  |
+| **Toelichting**             |Het iD is betekenisloos, kent geen volgorde en is uniek over alle systemen in de wereld.                                                                                  |
+| **Noodzakelijkheid**        |Elke gegevensverwerkingsactie wordt uniek opgeslagen in het logboek. Indien een rapportage moet worden gemaakt voor de betrokkene, moet de unieke gegevensverwerkingsactie opgehaald kunnen worden uit het logboek. Het ophalen van de gegevens gaat op basis van het operationId, dus zonder dit gegeven is het aanmaken van een rapportage niet mogelijk.                                                                                  |
+| **Datatype**                |URI                                                                                  |
+| **Voorbeeld**               |6e8bc430-9c3a-11d9-9669-0800200c9a66                                                                                  |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Logboek                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
 
 | **Attribuut**               | **Beschrijving**                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------|
-| **Attribuutnaam**           |                                                                                  |
-| **Definitie Engels**        |                                                                                  |
-| **Attribuutnaam Nederlands**|                                                                                  |
-| **Definitie Nederlands**    |                                                                                  |
-| **Toelichting**             |                                                                                  |
-| **Noodzakelijkheid**        |                                                                                  |
-| **Datatype**                |                                                                                  |
-| **Voorbeeld**               |                                                                                  |
-| **Verplicht**               |                                                                                  |
-| **Gebruikt in**             |                                                                                  |
-| **Enumeratiewaarden**       |                                                                                  |
+| **Attribuutnaam**           |operationName                                                                                  |
+| **Definitie Engels**        |specific operation addressed, or referred to.                                                                                  |
+| **Attribuutnaam Nederlands**|actieNaam                                                                                  |
+| **Definitie Nederlands**    |naam van een specifieke gegevensverwerkingsactie.                                                                                  |
+| **Toelichting**             |Aanbevolen wordt alle gegevensverwerkingsacties te beschrijven als een werkwoord (werkwoordsvorm infinitief) gevolgd door een zelfstandig naamwoord.                                                                                  |
+| **Noodzakelijkheid**        |Om duidelijk te maken aan de betrokkene (in het geval van een aanvraag gegevensinkijk) wat er concreet is gebeurd bij een gegevensverwerkingsactie, wordt er een operationName gedefinieerd. Zie ook artikel 4 van de AVG waarin de definitie van ‘verwerking’ wordt genoemd:
+een bewerking of een geheel van bewerkingen met betrekking tot persoonsgegevens of een geheel van persoonsgegevens, al dan niet uitgevoerd via geautomatiseerde procedés, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens.
+                                                                                  |
+| **Datatype**                |CharacterString                                                                                  |
+| **Voorbeeld**               |Opslaan persoonsgegevens                                                                                  |
+| **Verplicht**               |Ja                                                                                  |
+| **Gebruikt in**             |Logboek                                                                                  |
+| **Enumeratiewaarden**       |Niet van toepassing                                                                                  |
 
 | **Attribuut**               | **Beschrijving**                                                                 |
 |-----------------------------|-----------------------------------------------------------------------------------|
