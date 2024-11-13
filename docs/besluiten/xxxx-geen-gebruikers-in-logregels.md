@@ -23,7 +23,7 @@ Daarnaast kan het goed zijn dat de Dataverwerking in het Audit Log onder een and
 Het is daarom zuiverder om een andere oplossing te kiezen, namelijk:
 
 - Betrokkenheid van gebruiker wordt vastgelegd in een Audit Log (buiten scope van deze standaard)
-- In het Audit Log kan eventueel een relatie worden gelegd met het Processing ID dat ook in het Logboek Dataverwerkingen wordt gebruikt
+- In het Audit Log kan eventueel een relatie worden gelegd met de operation ID dat ook in het Logboek Dataverwerkingen wordt gebruikt
 - Iedere keer dat in het Audit Log gegevens over een gebruiker worden vastgelegd, moet tevens een Dataverwerking worden gelogd in het Logboek Dataverwerkingen.
 
 Let wel, deze Dataverwerking is een *andere Dataverwerking* dan de Dataverwerking die op dat moment wordt uitgevoerd door de Gebruiker, heeft een eigen Trace Context, en wordt gerelateerd aan een andere Verwerkingsactiviteit.
@@ -37,4 +37,4 @@ In logregels worden geen identificerende gegevens over gebruikers van de Applica
 ## Gevolgen
 
 - In gevallen dat het nodig is te achterhalen welke gebruiker een specifieke Dataverwerking heeft uitgevoerd, moet dit worden achterhaald door de Dataverwerking te koppelen aan het Audit Log (buiten scope van de standaard)
-- Het koppelen van Dataverwerking aan Audit Log is mogelijk door in Audit Logs hetzelfde Processing ID op te nemen als in de logregel die in het Logboek Dataverwerkingen wordt opgenomen.
+- Het koppelen van Dataverwerking aan Audit Log is mogelijk door in Audit Logs hetzelfde operation ID op te nemen als in de logregel die in het Logboek Dataverwerkingen wordt opgenomen.
