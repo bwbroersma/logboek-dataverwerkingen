@@ -17,8 +17,7 @@ Het standaardiseren van aanvullende functionaliteit wordt gedaan met behulp van 
   Deze extensie specificeert een uniforme manier om verwerkte data in logregels op te nemen
 
 - *Extensie Inzage*<br>
-  Deze extensie heeft een afhankelijkheid van de extensies *{{Betrokkenen}}* en *Verwerkte Data*, en biedt een interface op
-  de logs vanuit het perspectief van de {{Betrokkene}}.
+  Deze extensie heeft een afhankelijkheid van de extensies *{{Betrokkenen}}* en *Verwerkte Data*, en biedt een interface op de logs vanuit een bepaald perspectief.
 
 - *Extensie Manipulatiebestendigheid*<br>
   Deze extensie beschrijft hoe Logboeken zodanig kunnen worden ingericht dat manipulatie van de Logregels kan worden aangetoond,
