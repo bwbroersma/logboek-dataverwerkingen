@@ -12,7 +12,7 @@ Door Dataverwerkingen te loggen volgens de standaard kunnen organisaties het dat
 
 ## Werkingsgebied
 
-Functioneel toepassingsgebied: De standaard Logboek Dataverwerkingen moet worden toegepast als persoonsgegevens worden verwerkt ten behoeve van het ontsluiten van overheidsinformatie en/of functionaliteit.
+Functioneel toepassingsgebied: De standaard Logboek Dataverwerkingen kan worden toegepast als data wordt verwerkt in overheidssystemen. Uitgangspunt is de verantwoordingsplicht van de overheid over de uitvoering van haar taken en de [wetten en kaders](https://logius-standaarden.github.io/logboek-dataverwerkingen_Juridisch-beleidskader/) die daarbij horen.
 
 Organisatorisch werkingsgebied: Nederlandse overheden (Rijk, provincies, gemeenten en waterschappen) en instellingen uit de (semi-) publieke sector.
 
