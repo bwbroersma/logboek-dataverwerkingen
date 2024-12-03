@@ -27,7 +27,7 @@ loggerB -[dashed]r- registerB
 softwareA -[hidden]- Dummy
 Dummy -[hidden]- softwareB
 remove Dummy
-softwareA -[bold,#green]l-> softwareB : Trace Context
+softwareA -[bold,#green]l-> softwareB : Trace
 
 skinparam boxPadding 50
 skinparam linetype polyline
