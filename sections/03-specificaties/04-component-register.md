@@ -1,6 +1,6 @@
 # Component: Register
 
-Voor ieder register met statische gegevens over dataverwerkingen die gelogd moeten worden gelden de volgende specificaties voor het gedrag en de interface.
+Voor ieder register met statische gegevens over Dataverwerkingen die gelogd moeten worden gelden de volgende specificaties voor het gedrag en de interface.
 
 
 ## Gedrag
