@@ -4,7 +4,7 @@ De volgende lijst beschrijft terminologie in de betekenis zoals deze wordt gebru
 
 <dfn data-lt="Acties">Actie</dfn>
 
-Een {{Dataverwerking}} bestaat uit meerdere kleinere discrete stappen. Een Actie is één discrete stap binnen een Dataverwerking.
+Een {{Dataverwerking}} bestaat uit één of meerdere kleinere discrete stappen. Een Actie is één discrete stap binnen een Dataverwerking.
 
 
 <dfn data-lt="Applicaties">Applicatie</dfn>
