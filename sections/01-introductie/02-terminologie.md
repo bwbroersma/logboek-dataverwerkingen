@@ -53,6 +53,11 @@ Concept waarmee bij elkaar behorende {{Dataverwerkingen}} binnen de grenzen van 
  | In de standaard wordt de Verwerkingsverantwoordelijke aangeduid als de Verantwoordelijke voor de leesbaarheid.
 
 
+<dfn data-lt="Verwerkers">Verwerker</dfn>
+
+ Een natuurlijke persoon of rechtspersoon, een overheidsinstantie, een dienst of een ander orgaan die/dat ten behoeve van de {{Verwerkingsverantwoordelijke}} persoonsgegevens verwerkt. Deze definitie is gebaseerd op ([[AVG]] art. 4, lid 8.), maar laat de verantwoordelijkheid betrekking hebben op de verwerking van álle gegevens, niet alleen persoonsgegevens.
+
+
 <dfn data-lt="Verwerkingsactiviteiten">Verwerkingsactiviteit</dfn>
 
 {{Verwerkingsactiviteiten}} zijn de activiteiten die een organisatie onderkent heeft als activiteiten waarbinnen {{Dataverwerkingen}} plaatsvinden.
