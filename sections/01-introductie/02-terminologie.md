@@ -24,7 +24,7 @@ Aansluitend bij de Algemene Verordening Gegevensbescherming (art. 4 lid 2), maar
 
 <dfn>Inzage</dfn>
 
-De Betrokkene heeft het recht om van de {{verwerkingsverantwoordelijke}} uitsluitsel te verkrijgen over het al dan niet verwerken van hem betreffende persoonsgegevens en, wanneer dat het geval is, om inzage te verkrijgen van die persoonsgegevens ([[AVG]], art. 15, lid 1). Met *Inzage* doelen we op de handeling waarmee uitvoering wordt gegeven aan dat recht.
+De Betrokkene heeft het recht om van de {{Verantwoordelijke}} uitsluitsel te verkrijgen over het al dan niet verwerken van hem betreffende persoonsgegevens en, wanneer dat het geval is, om inzage te verkrijgen van die persoonsgegevens ([[AVG]], art. 15, lid 1). Met *Inzage* doelen we op de handeling waarmee uitvoering wordt gegeven aan dat recht.
 
 <dfn data-lt="Logboeken">Logboek</dfn>
 
@@ -48,7 +48,9 @@ Concept waarmee bij elkaar behorende {{Dataverwerkingen}} binnen de grenzen van 
 
 <dfn data-lt="Verantwoordelijke|Verantwoordelijken|Verwerkingsverantwoordelijken">Verwerkingsverantwoordelijke</dfn>
 
-Een natuurlijke persoon of rechtspersoon, een overheidsinstantie, een dienst of een ander orgaan die/dat, alleen of samen met anderen, het doel van en de middelen voor de verwerking van persoonsgegevens vaststelt ([[AVG]] art. 4, lid 7.)
+ Een natuurlijke persoon of rechtspersoon, een overheidsinstantie, een dienst of een ander orgaan die/dat, alleen of samen met anderen, het doel van en de middelen voor de verwerking van gegevens vaststelt. Deze definitie is gebaseerd op ([[AVG]] art. 4, lid 7.), maar laat de verantwoordelijkheid betrekking hebben op de verwerking van álle gegevens, niet alleen persoonsgegevens.
+
+ | In de standaard wordt de Verwerkingsverantwoordelijke aangeduid als de Verantwoordelijke voor de leesbaarheid.
 
 
 <dfn data-lt="Verwerkingsactiviteiten">Verwerkingsactiviteit</dfn>
