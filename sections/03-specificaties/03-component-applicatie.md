@@ -1,6 +1,6 @@
 # Component: Applicatie
 
-Voor iedere Applicatie waarin Dataverwerkingen plaatsvinden gelden de volgende specificaties voor gedrag.
+Voor iedere {{Applicatie}} waarin Dataverwerkingen plaatsvinden gelden de volgende specificaties voor gedrag.
 
 
 ## Gedrag
