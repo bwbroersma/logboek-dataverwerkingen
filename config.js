@@ -22,7 +22,7 @@ const localConfig = {
     },
     {
       name: "Pieter Teekens",
-      company: "Ministerie van Binnelandse Zaken en Koninkrijksrelaties",
+      company: "Ministerie van Binnenlandse Zaken en Koninkrijksrelaties",
       companyURL: "https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties",
     },
     {

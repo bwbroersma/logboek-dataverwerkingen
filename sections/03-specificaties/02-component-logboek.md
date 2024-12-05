@@ -16,16 +16,18 @@ De interface ***MOET*** de volgende velden implementeren:
 
 | Veld                  | Type           | optioneel | Omschrijving |
 |-----------------------|----------------|---------------|--------------|
-| `trace_id`            | 16 byte        | verplicht     | Uniek ID van *Trace*, een groep bij elkaar behorende Dataverwerkingen |
-| `operation_id`        |  8 byte        | verplicht     | Uniek ID van de Dataverwerking |
-| `status_code`         | enum           | verplicht     | Status van de Dataverwerking |
-| `name`                | string         | verplicht     | Naam van de specifieke operatie binnen de Dataverwerking |
-| `start_time`          | timestamp (ms) | verplicht     | Tijdstip waarop de Dataverwerking gestart is |
-| `end_time`            | timestamp (ms) | verplicht     | Tijdstip waarop de Dataverwerking beëindigd is |
-| `parent_operation_id` |  8 byte        | optioneel     | ID van aanroepende Dataverwerking *binnen de huidige Verwerkingsactiviteit* |
-| `foreign_operation`   | message        | optioneel     |              |
-| `resource`            | message        | optioneel     |              |
+| `trace_id`            | 16 byte        | verplicht     | Unieke identificerende code van {{Trace}} die {{Dataverwerking}} volgt |
+| `operation_id`        |  8 byte        | verplicht     | Unieke identificerende code van {{Actie}} binnen de Dataverwerking |
+| `status_code`         | enum           | verplicht     | Status van de Actie |
+| `name`                | string         | verplicht     | Naam van de specifieke Actie binnen de Dataverwerking |
+| `start_time`          | timestamp (ms) | verplicht     | Tijdstip waarop de Actie gestart is |
+| `end_time`            | timestamp (ms) | verplicht     | Tijdstip waarop de Actie beëindigd is |
+| `parent_operation_id` |  8 byte        | optioneel     | Unieke identificerende code aanroepende Actie *binnen huidige Trace* |
+| `foreign_operation`   | message        | optioneel     | Unieke identificerende code aanroepende Actie *bij externe partij* |
+| `resource`            | message        | optioneel     | Zie toelichting hieronder |
 | `attributes`          | list           | verplicht     | Verplichte key-value pairs |
+
+Het veld `operation_id` is in implementaties voor logging ook wel bekend als `span_id`.
 
 Het veld `status_code` is een enumeratie die de volgende waarden kan bevatten:
 
@@ -36,9 +38,11 @@ Het veld `status_code` is een enumeratie die de volgende waarden kan bevatten:
 Het veld `foreign_operation` is een `message`, opgebouwd uit de volgende velden:
 | Veld                  | Type           | optioneel | Omschrijving |
 |-----------------------|----------------|---------------|--------------|
-| `trace_id`            | 16 byte        | verplicht     | Uniek ID van *Trace* bij externe partij |
-| `operation_id`        |  8 byte        | verplicht     | Uniek ID van de Dataverwerking bij externe partij |
+| `trace_id`            | 16 byte        | verplicht     | Unieke identificerende code van *Trace* bij externe partij |
+| `operation_id`        |  8 byte        | verplicht     | Unieke identificerende code van de *Actie* bij externe partij |
 | `entity`              |  URI           | verplicht     | URI verwijzend naar externe partij |
+
+Deze velden worden optioneel aangeboden door een aanroepende Applicatie, zie de specificatie van het [gedrag van Applicaties](#gedrag-0).
 
 Het veld `resource` is een bericht, opgebouwd uit het volgende veld:
 
@@ -46,6 +50,6 @@ Het veld `resource` is een bericht, opgebouwd uit het volgende veld:
 
 Het veld `attributes` is een lijst van *key-value pairs*, in een namespace met prefix `dpl.` (data processing log). De volgende attributen zijn mogelijk in de namespace `core`:
 
-- `dpl.core.processing_activity_id`: URI; Verwijzing naar register met meer informatie over de verwerkingsactiviteit
-- `dpl.core.data_subject_id`: ID van de Betrokkene; versleuteld. Hiermee wordt aangeduid welke persoon Betrokkene is bij de verwerking, gelet op de AVG.
-- `dpl.core.data_subject_id_type`: Type van het veld `data_subject_id`. Dit is bijvoorbeeld `BSN`, `Personeelsnummer` of `Vreemdelingennummer`, of een URI naar een Register waar het veld precies wordt geduid.
+- `dpl.core.processing_activity_id`: URI; Verwijzing naar Register met meer informatie over de Verwerkingsactiviteit
+- `dpl.core.data_subject_id`: Unieke identificerende code van de Betrokkene; versleuteld. Hiermee wordt aangeduid welke persoon Betrokkene is bij de verwerking, gelet op de AVG.
+- `dpl.core.data_subject_id_type`: Type van het veld `data_subject_id`. Dit is bijvoorbeeld `BSN`, `Personeelsnummer` of `Vreemdelingennummer`, of een URI naar een Register waar het veld meer precies wordt geduid.

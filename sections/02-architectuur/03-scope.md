@@ -33,5 +33,5 @@ Dit betekent o.a. dat de standaard *geen* gedrag of interfaces specificeert voor
 
 ## Geen gegevens over gebruikers in Logregels
 
-In Logregels ligt geen informatie vast over welke gebruiker (medewerker) de Dataverwerking heeft uitgevoerd. Deze informatie hoort niet in het Logboek maar in een auditlog, en is daarmee buiten scope van de standaard. Wel is het mogelijk om vanuit auditlogs de relatie te leggen naar specifieke Logregels in het Logboek. (toevoegen link naar Algemene inleiding, besluit over gebruikers)
+In Logregels ligt geen informatie vast over welke specifieke medewerker van de Verantwoordelijke ofwel de gebruiker de Dataverwerking heeft uitgevoerd. Deze informatie hoort niet in het Logboek maar in een auditlog, en is daarmee buiten scope van de standaard. Wel is het mogelijk om vanuit auditlogs de relatie te leggen naar specifieke Logregels in het Logboek. (toevoegen link naar Algemene inleiding, besluit over gebruikers)
 

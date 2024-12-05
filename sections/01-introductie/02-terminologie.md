@@ -2,6 +2,10 @@
 
 De volgende lijst beschrijft terminologie in de betekenis zoals deze wordt gebruikt in dit document.
 
+<dfn data-lt="Acties">Actie</dfn>
+
+Een {{Dataverwerking}} bestaat uit één of meerdere kleinere discrete stappen. Een Actie is één discrete stap binnen een Dataverwerking.
+
 
 <dfn data-lt="Applicaties">Applicatie</dfn>
 
@@ -15,12 +19,12 @@ Als persoonsgegevens worden verwerkt, wordt de persoon van wie de organisatie pe
 
 <dfn data-lt="Dataverwerkingen|Dataverwerking">Dataverwerking</dfn>
 
-Aansluitend bij de Algemene Verordening Gegevensbescherming (art. 4 lid 2), maar breder toegepast dan alleen persoonsgegevens, wordt voor deze standaard *‘elke bewerking of elk geheel van bewerkingen met betrekking tot gegevens, al dan niet uitgevoerd via geautomatiseerde procedures, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens’* opgevat als een dataverwerking.
+Aansluitend bij de Algemene Verordening Gegevensbescherming (art. 4 lid 2), maar breder toegepast dan alleen persoonsgegevens, wordt voor deze standaard *‘elke bewerking of elk geheel van bewerkingen met betrekking tot gegevens, al dan niet uitgevoerd via geautomatiseerde procedures, zoals het verzamelen, vastleggen, ordenen, structureren, opslaan, bijwerken of wijzigen, opvragen, raadplegen, gebruiken, verstrekken door middel van doorzending, verspreiden of op andere wijze ter beschikking stellen, aligneren of combineren, afschermen, wissen of vernietigen van gegevens’* opgevat als een Dataverwerking. Iedere Dataverwerking bestaat uit één of meerdere {{Acties}}.
 
 
 <dfn>Inzage</dfn>
 
-De Betrokkene heeft het recht om van de {{verwerkingsverantwoordelijke}} uitsluitsel te verkrijgen over het al dan niet verwerken van hem betreffende persoonsgegevens en, wanneer dat het geval is, om inzage te verkrijgen van die persoonsgegevens ([[AVG]], art. 15, lid 1). Met *Inzage* doelen we op de handeling waarmee uitvoering wordt gegeven aan dat recht.
+De Betrokkene heeft het recht om van de {{Verantwoordelijke}} uitsluitsel te verkrijgen over het al dan niet verwerken van hem betreffende persoonsgegevens en, wanneer dat het geval is, om inzage te verkrijgen van die persoonsgegevens ([[AVG]], art. 15, lid 1). Met *Inzage* doelen we op de handeling waarmee uitvoering wordt gegeven aan dat recht.
 
 <dfn data-lt="Logboeken">Logboek</dfn>
 
@@ -44,7 +48,14 @@ Concept waarmee bij elkaar behorende {{Dataverwerkingen}} binnen de grenzen van 
 
 <dfn data-lt="Verantwoordelijke|Verantwoordelijken|Verwerkingsverantwoordelijken">Verwerkingsverantwoordelijke</dfn>
 
-Een natuurlijke persoon of rechtspersoon, een overheidsinstantie, een dienst of een ander orgaan die/dat, alleen of samen met anderen, het doel van en de middelen voor de verwerking van persoonsgegevens vaststelt ([[AVG]] art. 4, lid 7.)
+ Een natuurlijke persoon of rechtspersoon, een overheidsinstantie, een dienst of een ander orgaan die/dat, alleen of samen met anderen, het doel van en de middelen voor de verwerking van gegevens vaststelt. Deze definitie is gebaseerd op ([[AVG]] art. 4, lid 7.), maar laat de verantwoordelijkheid betrekking hebben op de verwerking van álle gegevens, niet alleen persoonsgegevens.
+
+ | In de standaard wordt de Verwerkingsverantwoordelijke aangeduid als de Verantwoordelijke voor de leesbaarheid.
+
+
+<dfn data-lt="Verwerkers">Verwerker</dfn>
+
+ Een natuurlijke persoon of rechtspersoon, een overheidsinstantie, een dienst of een ander orgaan die/dat ten behoeve van de {{Verwerkingsverantwoordelijke}} persoonsgegevens verwerkt. Deze definitie is gebaseerd op ([[AVG]] art. 4, lid 8.), maar laat de verantwoordelijkheid betrekking hebben op de verwerking van álle gegevens, niet alleen persoonsgegevens.
 
 
 <dfn data-lt="Verwerkingsactiviteiten">Verwerkingsactiviteit</dfn>
